@@ -8,4 +8,4 @@ import './pages/quiz_page.dart';
         home: new LandingPage(),
       ));
 
-    }
+    
