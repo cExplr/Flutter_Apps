@@ -15,7 +15,9 @@ class CustomBar extends StatelessWidget{
     return new Container(
       height: barHeight,
       decoration: new BoxDecoration(
-        color: Colors.lightBlue
+          color: Colors.lightBlue,
+          borderRadius: new BorderRadius.circular(10.0),
+
       ),
       child: Center(
           child: new Text(

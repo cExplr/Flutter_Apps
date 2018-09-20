@@ -18,21 +18,37 @@ class ChallengePageState extends State<ChallengePage>{
     // TODO: implement build
 
     return new Scaffold(
+
+
+
+
       backgroundColor: Colors.black12,
 
 //      appBar: new AppBar(
 //        backgroundColor: Colors.teal,
 //        title: new Text("CHALLENGES"),
 //      ),
+      body: Container(
+        child: new Stack(
+          fit: StackFit.expand,
+          children: <Widget>[
+          new Image(
+              image: new AssetImage(
+                "images/shellcode.png"),
+          color: Color.fromRGBO(0, 0, 0, 80.0),
+          colorBlendMode: BlendMode.darken,
+            fit: BoxFit.cover,
+          ),
 
-      body: new Column(
-
-        children: <Widget>[
-          new  CustomBar("Flag-Submission",66.0),
-          new ChallengeBody()
-
-
+          new Column(
+            children: <Widget>[
+            new  CustomBar("Flag-Submission",66.0),
+            new ChallengeBody()
         ],
+      ),
+          ],
+        ),
+
       ),
     );
   }
